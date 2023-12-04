@@ -1,2 +1,23 @@
 
 /* Your CSS Code here. */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.holder {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr); /* Two equal rows */
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  width: 200px; /* Total size of the grid */
+  gap: 5px; /* Adjust gap as needed */
+}
+
+.item {
+  border: 1px solid #333;
+  padding: 20px;
+  text-align: center;
+}
